@@ -1,0 +1,24 @@
+  <br>
+  <!-- Job Card -->
+  <div class="container">
+    <div class="bg-white job-card">
+      <h3><span class="text-danger"><%=job.designation%></span> <span class="text-success">opportunity</span>  <span class="text-success">in</span> <span class="text-success"><%=job.location%></span> <span class="text-success">at</span> <span class="text-primary"><%=job.name%></span></h3>
+      <h5 class="mt-3" style="color: black;"><%=job.name%>&nbsp;&nbsp;<a class="fa-solid fa-pen-to-square" href="/job/update/<%=job._id%>"></a>&nbsp;&nbsp;<a href="/job/delete/<%=job._id%>" class="fa-solid fa-trash" style="color: #ff0000;"></a></h5>
+      <p class="mb-2 text-muted"><%=job.category%> <%=job.designation%></p>
+      <p style="color:black">📍 <%=job.location%></p>
+      <p style="color:black">💰 <%=job.salary%></p>
+      <p style="color:black">⏳ Apply By <%=job.applyBy%></p>
+      <p style="color:black">📊 Number of openings: <%=job.positions%></p>
+      <p style="color:black">👥 <a href="/job/applicants/<%=job._id%>">Applicants: <%=job.applicants%></a></p>
+
+      <div class="tags my-3">
+        <% job.skills.forEach((skill)=>{  %>
+          <span class="badge bg-light text-dark border"><%=skill%></span>
+        <% }) %>
+      </div>
+
+      <a href="/applynow/<%=job._id%>" class="btn btn-primary">Apply Now</a>
+      <div class="posted-time mt-3">Posted: <%=job.postedOn%></div>
+    </div>
+  </div>
+  <i ></i>

@@ -1,0 +1,67 @@
+<!-- Job Posting Card -->
+
+<% if(errorMessage){ %>
+  <div class="alert alert-danger"  role="alert">
+    <%=errorMessage%>
+  </div>
+<% }  %>
+<div class="card card-custom p-4">
+  <h3 class="text-center">Post a new Job</h3>
+  <form action="/postjob" method="post">
+    <select class="form-select mb-3" name="category">
+        <option selected disabled>Select Job Category</option>
+        <option value="Tech">Tech</option>
+        <option value="Non Tech">Non Tech</option>
+    </select>
+
+    <select class="form-select mb-3" name="designation">
+      <option selected disabled>Select Job Designation</option>
+      <option value="HR">HR</option>
+      <option value="SDE">SDE</option>
+      <option value="DevOps">DevOps</option>
+      <option value="MERN Developer">MERN Developer</option>
+      <option value="MEAN Developer">MEAN Developer</option>
+      <option value="JAVA Developer">JAVA Developer</option>
+      <option value="Front-End Developer">Front-End Developer</option>
+      <option value="Backend Developer">Backend Developer</option>
+      <option value="Full-Stack Developer">Full Stack Developer</option>
+    </select>
+
+    <input type="text" class="form-control mb-3" placeholder="Enter Job Location" name="location" required>
+
+    <input type="text" class="form-control mb-3" placeholder="Enter Company Name" name="name" required>
+
+    <div class="row mb-3">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Enter Salary" name="salary" required>
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" placeholder="Total no of openings" name="positions" required>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-8">
+        <select multiple class="form-select multi-select" name="skills">
+          <option selected disabled>Select skills required for this job</option>
+          <option value="React">React</option>
+          <option value="NodeJs">NodeJs</option>
+          <option value="Angular">Angular</option>
+          <option value="Data Structures">Data Structures and Algorithm</option>
+          <option value="MongoDB">MongoDB</option>
+          <option value="SQL">SQL</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label class="form-label form-label-custom">Apply By</label>
+        <div class="input-group">
+          <input type="date" class="form-control" placeholder="dd-mm-yyyy" name="applyBy" required>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-submit w-100">Submit</button>
+  </form>
+</div>
+

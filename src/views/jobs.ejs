@@ -1,0 +1,24 @@
+  <!-- Job Cards -->
+  <div class="container">
+    <div class="row justify-content-center">
+       <% jobs.forEach((job)=>{ %>
+        <div class="col-md-4">
+          <div class="job-card">
+            <div class="actively-hiring">Actively hiring</div>
+            <div class="company-title"><%= job.name %></div>
+            <div><%=job.category%> <span class="text-info"><%= job.designation%></span></div>
+            <div class="mt-2"><i class="fas fa-map-marker-alt location-icon"></i><%=job.location%></div>
+            <div class="mt-1">₹ <%=job.salary%></div>
+            <div class="mt-2">
+              <% job.skills.forEach((skill)=>{ %>
+                <span class="badge badge-skill"><%=skill%></span>
+              <% }) %>
+            </div>
+            <a class="btn view-btn mt-3 w-100"href="job/<%=job._id%>">View details</a>
+          </div>
+        </div>
+       <% }) %>
+    </div>
+  </div>
+
+

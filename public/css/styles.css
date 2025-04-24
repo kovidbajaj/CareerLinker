@@ -1,0 +1,201 @@
+body {
+    background-color: #0e0b23;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .navbar {
+    background-color: #1c1c3c;
+  }
+  .navbar-brand, .nav-link, .dropdown-toggle {
+    color: #fff !important;
+  }
+  .search-bar {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .job-card {
+    background-color: #161634;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 10px;
+    min-height: 300px;
+  }
+  .badge-skill {
+    background-color: #011c3a;
+    color: #00d1ff;
+    border: 1px solid #00d1ff;
+    margin: 2px;
+  }
+  .actively-hiring {
+    background-color: #1a2f55;
+    color: #00ffb2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+  }
+  .company-title {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .view-btn {
+    background-color: transparent;
+    color: #00ffb2;
+    border: 1px solid #00ffb2;
+  }
+  .view-btn:hover {
+    background-color: #00ffb2;
+    color: #000;
+  }
+
+
+  .job-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .tags span {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .posted-time {
+    background-color: #e6ffe6;
+    color: #006600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+    .hero-section {
+      padding: 60px 15px;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #f54b99;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #cfcfea;
+    }
+    .btn-custom {
+      background-color: #f54b99;
+      color: white;
+      border: none;
+      margin-right: 15px;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+    .btn-custom:hover {
+      background-color: #e73e8b;
+    }
+    .illustration {
+      max-width: 100%;
+    }
+
+
+    .card-custom {
+      max-width: 700px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #1d1540;
+    }
+
+    .card-custom h3 {
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 500;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .btn-submit {
+      background-color: #138c4c;
+      color: white;
+      font-weight: 500;
+    }
+
+    .form-select,
+    .form-control {
+      border-radius: 6px;
+    }
+
+    .multi-select {
+      height: 90px;
+    }
+
+    .form-label-custom {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    .input-group-text {
+      background-color: white;
+    }
+
+ 
+    .oops-text {
+      font-size: 5rem;
+      font-weight: 300;
+      animation: fadeInDown 1s ease;
+    }
+
+    .sad-face {
+      font-size: 5rem;
+      margin-top: 20px;
+      animation: bounceIn 1.2s ease;
+    }
+
+    .message {
+      color: #e74c3c;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .table-hover tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    .search-box {
+      max-width: 300px;
+    }
+
+    .main-content {
+      text-align: center;
+      margin-top: 10%;
+    }
+
+    .main-content h1 {
+      font-size: 5rem;
+    }
+
+    .sad-face {
+      font-size: 6rem;
+      margin-left: 20px;
+    }
+
+    .error-text {
+      color: #d85774;
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }

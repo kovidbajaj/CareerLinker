@@ -1,0 +1,30 @@
+  <!-- Table -->
+  <div class="container my-5">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead class="table-light">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Resume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i in jobSeekersName){ %>
+            <tr>
+              <td><%=Number(i)+1%></td>
+              <td><%=jobSeekersName[i]%></td>
+              <td><%=jobSeekersEmail[i]%></td>
+              <td><%=jobSeekersNumber[i]%></td>
+              <% const fileUrl="/"+ jobSeekersfileURL[i] %>
+              <td><a href="<%=fileUrl%>" class="btn btn-primary btn-sm" target="_blank">View</a></td>
+            </tr>
+          <% } %>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
